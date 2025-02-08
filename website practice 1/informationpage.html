@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Details</title>
+    <style>
+        body {
+            background-color: grey;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        center img {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        fieldset {
+            border: 2px solid #4CAF50;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 48%;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            input[type="submit"],
+            input[type="reset"] {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+        /* Styles for textarea */
+        textarea {
+            resize: vertical; /* Allows vertical resizing only */
+        }
+
+        /* Hobbies and gender styles */
+        .hobbies,
+        .gender {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .hobbies label,
+        .gender label {
+            flex: 1 1 30%; /* Allow wrapping and set a base size */
+            margin-right: 10px;
+        }
+
+        /* Clearfix for flex items */
+        .hobbies,
+        .gender {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <center><img src="gobletcut.png" alt="Goblet Logo"></center>
+    <form>
+        <fieldset>
+            <legend>Enter Details for Better Performance</legend>
+            <label for="name">NAME</label>
+            <input type="text" id="name" placeholder="Enter your full Name" required>
+
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" placeholder="Enter code" required>
+
+            <div class="gender">
+                <label>GENDER</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <label>Hobbies</label>
+            <div class="hobbies">
+                <input type="checkbox" name="hobby" id="music">
+                <label for="music">Music</label>
+
+                <input type="checkbox" name="hobby" id="football">
+                <label for="football">Football</label>
+
+                <input type="checkbox" name="hobby" id="reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" name="hobby" id="cricket">
+                <label for="cricket">Cricket</label>
+            </div>
+
+            <label for="message">MESSAGE</label>
+            <textarea id="message" rows="4" placeholder="Enter Message"></textarea>
+
+            <label for="country">COUNTRY</label>
+            <select id="country" required>
+                <option value="India" selected>India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="America">America</option>
+            </select>
+
+            <label for="clothes">CLOTHES</label>
+            <select id="clothes" required>
+                <optgroup label="Gucci">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                </optgroup>
+                <optgroup label="Louis Vuitton">
+                    <option>D</option>
+                    <option>E</option>
+                    <option>F</option>
+                </optgroup>
+                <optgroup label="Armani">
+                    <option>G</option>
+                    <option>H</option>
+                    <option>I</option>
+                </optgroup>
+            </select>
+
+            <label for="clothes-new">CLOTHES NEW</label>
+            <input list="clothes-new" id="clothes-new">
+            <datalist id="clothes-new">
+                <option value="Jackets"></option>
+                <option value="Jeans"></option>
+                <option value="Shirts"></option>
+            </datalist>
+
+            <label for="file-upload">Upload File</label>
+            <input type="file" id="file-upload">
+
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
