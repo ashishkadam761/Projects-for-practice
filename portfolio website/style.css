@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0078D7;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #eef4ff;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: #0078D7;
+  }
+  
+  .hero-content p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .social-icons a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #0078D7;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #0078D7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .skills-section, .projects-section, .experience-section, .contact-section {
+    padding: 2rem;
+  }
+  
+  h2 {
+    color: #0078D7;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0078D7;
+    color: white;
+  }
+  
